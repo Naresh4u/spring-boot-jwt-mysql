@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/test?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    username: root
+    password: tiger
+    platform: mysql
+    hikari:      connection-test-query: "SELECT 1"
+      
+  jpa:    show-sql: true
+    hibernate:      ddl-auto: update
+jwt:
+  secret: javainuse
+    
